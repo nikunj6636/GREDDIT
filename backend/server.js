@@ -27,10 +27,10 @@ mongoose.connect( uri , { useNewUrlParser: true, useUnifiedTopology: true })
 
 // routes
 
-app.use("/", require("./routes/users"));
-app.use("/", require("./routes/subgreddits"));
-app.use("/", require("./routes/posts"));
-app.use("/", require("./routes/reports"))
+app.use("/api/", require("./routes/users"));
+app.use("/api/", require("./routes/subgreddits"));
+app.use("/api/", require("./routes/posts"));
+app.use("/api/", require("./routes/reports"))
 
 app.listen(port, () => {
   console.log("Server is running at port", port);

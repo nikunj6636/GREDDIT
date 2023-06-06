@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
 
 const tokenStr = localStorage.getItem("token"); // subgreddits of logged in user
-const server = "http://localhost:5000";
+const server = "/api";
   
 const ReportPostModal = ({postId, reporteduser, subgredditId}) => {
 

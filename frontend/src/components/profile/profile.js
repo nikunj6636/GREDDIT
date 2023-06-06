@@ -8,7 +8,7 @@ import MyFollowing from "./following";
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
-const server = 'http://localhost:5000';
+const server = '/api';
 
 const ProfilePage = () => {
 

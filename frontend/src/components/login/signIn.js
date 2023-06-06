@@ -30,7 +30,7 @@ const validate = values => {
 
 // stateless functional components
 
-const server = "http://localhost:5000";
+const server = "/api";
 
 const theme = createTheme();
 export default function SignInPage({isSignIn}) {

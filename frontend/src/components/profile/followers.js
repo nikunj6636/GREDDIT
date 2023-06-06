@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const MyFollowers = (props) => {
 
-  const server = 'http://localhost:5000';
+  const server = '/api';
   let tokenStr = localStorage.getItem("token");
 
   const [followers, setfollowers] = useState([]); // initially empty

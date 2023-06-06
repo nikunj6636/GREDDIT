@@ -5,7 +5,7 @@ import axios from "axios";
 import Navbar from "./navbar";
 
 let tokenStr = localStorage.getItem("token");
-const server = 'http://localhost:5000';
+const server = '/api';
 
 const UsersPage = () => {
     const { id } = useParams(); // subgreddit-id

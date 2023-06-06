@@ -23,7 +23,7 @@ const validate = values => {
 
 const theme = createTheme();
 
-const server = 'http://localhost:5000';
+const server = '/api';
 
 export default function SignUpPage({isSignIn}) {
   

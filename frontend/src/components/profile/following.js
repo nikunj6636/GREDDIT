@@ -8,7 +8,7 @@ const Following = ["aayush", "tejas", "rohan", "kartik", "apurva"];
 
 const MyFollowing = (props) => {
 
-  const server = 'http://localhost:5000';
+  const server = '/api';
   let tokenStr = localStorage.getItem("token");
 
   const [following, setfollowing] = useState([]); // initially empty

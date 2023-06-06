@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "./navbar";
 
 const tokenStr = localStorage.getItem("token"); // subgreddits of logged in user
-const server = "http://localhost:5000";
+const server = "/api";
 
 const Report = ({ reportId, refresh }) => {
   const [report, setreport] = useState({

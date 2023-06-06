@@ -6,7 +6,7 @@ import Navbar from "../navbar";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
 
 const tokenStr = localStorage.getItem("token"); // subgreddits of logged in user
-const server = "http://localhost:5000";
+const server = "/api";
 
 const Post = ({post, handleDelete}) => { // passing the post id to fetch the post, delete it
 

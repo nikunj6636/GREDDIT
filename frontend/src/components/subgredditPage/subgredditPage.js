@@ -9,7 +9,7 @@ import pic from "./profile.jpeg"; // img to be rendered
 import Posts from "./mypost";
 
 let tokenStr = localStorage.getItem("token");
-const server = 'http://localhost:5000';
+const server = '/api';
 
 const CreatePostModal = ({refresh, subgredditId, banned}) => {
 
@@ -131,7 +131,7 @@ const SubgredditPage = () => {
 
   const { id } = useParams(); // subgreddit-id
   const tokenStr = localStorage.getItem("token"); // subgreddits of logged in user
-  const server = "http://localhost:5000";
+  const server = "/api";
 
   useEffect(() => {
     axios // id is the subgreddit id to retrieve data from

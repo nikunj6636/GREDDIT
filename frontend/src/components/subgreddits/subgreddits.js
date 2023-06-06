@@ -6,7 +6,7 @@ import Fuse from "fuse.js";
 import Navbar from "../navbar";
 import { useNavigate } from "react-router-dom";
 
-const server = "http://localhost:5000";
+const server = "/api";
 
 const Card = ({ features, email, refresh }) => {
   

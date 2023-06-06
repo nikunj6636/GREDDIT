@@ -50,7 +50,7 @@ const Modal = ({ refresh }) => {
   };
 
   let tokenStr = localStorage.getItem("token");
-  const server = "http://localhost:5000";
+  const server = "/api";
 
   const formik = useFormik({
     // formik values
@@ -216,7 +216,7 @@ const Card = ({ features, handleDelete }) => {
 
 const MySubgreddit = () => {
   let tokenStr = localStorage.getItem("token");
-  const server = "http://localhost:5000";
+  const server = "/api";
 
   const [mysubgreddits, setmysubgreedits] = useState([]);
 
