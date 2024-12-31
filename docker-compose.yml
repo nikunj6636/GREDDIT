@@ -4,11 +4,11 @@ services:
     backend:
       build: ./backend
       environment:
-        - PORT=5000
+        - PORT=5000  ## I am using environment variables here to run the server, not exposing the port since we are using network-bridge to communicate.
+        ## we can directly use container names here because of bridge, docker is completely similar to my system, need to install dependcies, mount volume for permanent storage and run.
       restart: unless-stopped
       networks:
         - web-network
-
 
     frontend:
       build: ./frontend
